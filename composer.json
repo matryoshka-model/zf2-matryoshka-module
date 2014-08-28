@@ -1,5 +1,5 @@
 {
-    "name": "ripaclub/zf2-matryoshka-module",
+    "name": "matryoshka-model/zf2-matryoshka-module",
     "description": "ZF2 module for Matryoshka",
     "license": "BSD-2-Clause",
     "minimum-stability": "dev",
@@ -11,23 +11,13 @@
     ],
     "require": {
         "php": ">=5.4",
-        "ripaclub/matryoshka": "dev-develop",
-        "ripaclub/matryoshka-wrappers": "dev-develop"
+        "matryoshka-model/matryoshka": ">=0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zendframework": "2.*",
+        "matryoshka-model/matryoshka": "dev-develop"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ripaclub/matryoshka.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/ripaclub/matryoshka-wrappers.git"
-        }
-    ],
     "autoload": {
         "psr-0": {
             "Matryoshka": "src/",
