@@ -11,12 +11,11 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": ">=0.1"
+        "matryoshka-model/matryoshka": ">=0.1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
-        "zendframework/zendframework": "2.*",
-        "matryoshka-model/matryoshka": "dev-develop"
+        "zendframework/zendframework": "2.*"
     },
     "autoload": {
         "psr-0": {
