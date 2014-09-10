@@ -9,12 +9,12 @@ return [
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
             'Matryoshka\Model\ResultSet\HydratingResultSet' => 'Matryoshka\Model\ResultSet\HydratingResultSet',
         ],
-        'shared' => array(
+        'shared' => [
             'Matryoshka\Model\ModelManager' => true,
             'Matryoshka\Model\Object\ObjectManager' => true,
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => false,
             'Matryoshka\Model\ResultSet\HydratingResultSet' => false,
-        ),
+        ],
     ],
     'controller_plugins' => [
         'factories' => [

@@ -1,4 +1,11 @@
 <?php
+/**
+ * ZF2 matryoshka module
+ *
+ * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
+ * @copyright   Copyright (c) 2014, Ripa Club
+ * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
+ */
 
 namespace MatryoshkaTest\Module\Controller\Plugin;
 
@@ -6,6 +13,9 @@ use Matryoshka\Model\ModelManager;
 use Matryoshka\Module\Controller\Plugin\Model;
 use MatryoshkaTest\Model\TestAsset\ConcreteAbstractModel;
 
+/**
+ * Class ModelTest
+ */
 class ModelTest extends \PHPUnit_Framework_TestCase
 {
     /**
