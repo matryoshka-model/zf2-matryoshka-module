@@ -11,7 +11,6 @@ ZF2 integration module for [Matryoshka library](https://github.com/matryoshka-mo
 
 This repository contains a ZF2 module that registers default services and provides a set of useful controller plugins.
 
-
 Installation
 ---
 
@@ -19,24 +18,26 @@ Using [composer](http://getcomposer.org/):
 
 Add the following to your `composer.json` file:
 
-    "require": {
-        "php": ">=5.4",
-        "matryoshka-model/zf2-matryoshka-module": "~0.2"
-    }
+```json
+"require": {
+    "php": ">=5.4",
+    "matryoshka-model/zf2-matryoshka-module": "~0.2"
+}
+```
 
 Use
 ---
 
-Before using this module you only need to configure Matroshka settings according your model, then you can use built-in plugins in your controllers.
+Before using this module you only need to configure Matryoshka settings according to your model.
+
+Then you can use built-in plugins in your controllers.
 
 Example:
 
 ```php
-
 public function fooAction()
 {
-	$myModel  = $this->model()->get('MyModel'); //Retrive a model instance through the ModelManager
-	$myObject = $this->object()->get('MyObject'); //Retrive an object instance through the ModelManager
+	$myModel  = $this->model()->get('MyModel'); // Retrieve a model instance through the ModelManager
+	$myObject = $this->object()->get('MyObject'); // Retrieve an object instance through the ModelManager
 }
-
 ```

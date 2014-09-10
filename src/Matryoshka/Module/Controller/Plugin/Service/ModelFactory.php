@@ -1,4 +1,11 @@
 <?php
+/**
+ * ZF2 matryoshka module
+ *
+ * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
+ * @copyright   Copyright (c) 2014, Ripa Club
+ * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
+ */
 
 namespace Matryoshka\Module\Controller\Plugin\Service;
 
@@ -7,6 +14,9 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\Exception\ServiceNotCreatedException;
 use Matryoshka\Module\Controller\Plugin\Model;
 
+/**
+ * Class ModelFactory
+ */
 class ModelFactory implements FactoryInterface
 {
     /**
