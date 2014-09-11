@@ -1,6 +1,6 @@
 {
     "name": "matryoshka-model/zf2-matryoshka-module",
-    "description": "ZF2 module for Matryoshka library",
+    "description": "ZF2 module for matryoshka library",
     "license": "BSD-2-Clause",
     "authors": [
         {
@@ -52,5 +52,9 @@
             "dev-master": "0.3.x-dev",
             "dev-develop": "0.4.x-dev"
         }
+    },
+    "suggest": {
+        "matryoshka-model/matryoshka": "Model service layer that normalize and standardize your model's interface use",
+        "matryoshka-model/mongo-wrapper": "MongoDB matryoshka wrapper"
     }
 }
