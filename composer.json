@@ -22,7 +22,8 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": "~0.3"
+        "matryoshka-model/matryoshka": "~0.3",
+        "zendframework/zend-mvc": "2.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.2.*",
