@@ -2,7 +2,6 @@
     "name": "matryoshka-model/zf2-matryoshka-module",
     "description": "ZF2 module for Matryoshka library",
     "license": "BSD-2-Clause",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Leonardo Grasso",
@@ -23,13 +22,11 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": "~0.2.0"
+        "matryoshka-model/matryoshka": "~0.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
-        "satooshi/php-coveralls": "dev-master",
-        "fabpot/php-cs-fixer": "dev-master",
-        "zendframework/zendframework": "2.*"
+        "phpunit/phpunit": "4.2.*",
+        "satooshi/php-coveralls": "dev-master"
     },
     "autoload": {
         "psr-0": {
@@ -39,5 +36,20 @@
         "classmap": [
             "./Module.php"
         ]
+    },
+    "keywords": [
+        "model",
+        "mvc",
+        "matryoshka",
+        "back-end",
+        "db",
+        "database",
+        "zf2"
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3.x-dev",
+            "dev-develop": "0.4.x-dev"
+        }
     }
 }
