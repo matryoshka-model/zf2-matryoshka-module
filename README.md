@@ -1,5 +1,5 @@
-ZF2 Matryoshka [![Latest Stable Version](https://poser.pugx.org/matryoshka-model/zf2-matryoshka-module/v/stable.png)](https://packagist.org/packages/matryoshka-model/zf2-matryoshka-module)
-=======================
+ZF2 module for matryoshka [![Latest Stable Version](https://poser.pugx.org/matryoshka-model/zf2-matryoshka-module/v/stable.png)](https://packagist.org/packages/matryoshka-model/zf2-matryoshka-module)
+=========================
 
 | Master  | Develop |
 |:-------------:|:-------------:|
@@ -9,7 +9,7 @@ ZF2 Matryoshka [![Latest Stable Version](https://poser.pugx.org/matryoshka-model
 
 ZF2 integration module for [Matryoshka library](https://github.com/matryoshka-model/matryoshka).
 
-This repository contains a ZF2 module that registers default services and provides a set of useful controller plugins.
+This repository contains a ZF2 module that registers **default services** and provides **a set of useful controller plugins**.
 
 Installation
 ---
