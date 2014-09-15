@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": "~0.3",
+        "matryoshka-model/matryoshka": "~0.4",
         "zendframework/zend-mvc": "2.*"
     },
     "require-dev": {
@@ -49,8 +49,8 @@
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3.x-dev",
-            "dev-develop": "0.4.x-dev"
+            "dev-master": "0.4.x-dev",
+            "dev-develop": "0.5.x-dev"
         }
     },
     "suggest": {
