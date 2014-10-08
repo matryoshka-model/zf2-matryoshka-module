@@ -2,10 +2,10 @@
 return [
     'service_manager' => [
         'factories'  => [
+            'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\Service\ModelManagerFactory',
             'Matryoshka\Model\Object\ObjectManager' => 'Matryoshka\Model\Object\Service\ObjectManagerFactory',
         ],
         'invokables' => [
-            'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\ModelManager',
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
             'Matryoshka\Model\ResultSet\HydratingResultSet' => 'Matryoshka\Model\ResultSet\HydratingResultSet',
         ],
