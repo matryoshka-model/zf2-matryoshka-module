@@ -7,17 +7,19 @@
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
-namespace MatryoshkaTest\Module\Controller\Plugin\Service;
+namespace MatryoshkaModuleTest\Module\Controller\Plugin\Service;
 
 use Matryoshka\Model\ModelManager;
+use Matryoshka\Model\Object\ObjectManager;
 use Matryoshka\Module\Controller\Plugin\Service\ModelFactory;
+use Matryoshka\Module\Controller\Plugin\Service\ObjectFactory;
 use Zend\Mvc\Controller\PluginManager;
 use Zend\ServiceManager\ServiceManager;
 
 /**
- * Class ModelFactoryTest
+ * Class ObjectFactoryTest
  */
-class ModelFactoryTest extends \PHPUnit_Framework_TestCase
+class ObjectFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var ServiceManager
@@ -25,9 +27,9 @@ class ModelFactoryTest extends \PHPUnit_Framework_TestCase
     protected $sm;
 
     /**
-     * @var ModelManager
+     * @var ObjectManager
      */
-    protected $mm;
+    protected $om;
 
     /**
      * @var PluginManager
@@ -35,24 +37,24 @@ class ModelFactoryTest extends \PHPUnit_Framework_TestCase
     protected $pm;
 
     /**
-     * @var ModelFactory
+     * @var ObjectFactory
      */
     protected $factory;
 
     public function setUp()
     {
         $this->sm = new ServiceManager();
-        $this->mm = new ModelManager();
+        $this->om = new ObjectManager();
         $this->pm = new PluginManager();
-        $this->factory = new ModelFactory();
+        $this->factory = new ObjectFactory();
     }
 
     public function testCreateService()
     {
-        $this->sm->setService('Matryoshka\Model\ModelManager', $this->mm);
+        $this->sm->setService('Matryoshka\Model\Object\ObjectManager', $this->om);
         $this->pm->setServiceLocator($this->sm);
-        $model = $this->factory->createService($this->pm);
-        $this->assertInstanceOf('Matryoshka\Module\Controller\Plugin\Model', $model);
+        $object = $this->factory->createService($this->pm);
+        $this->assertInstanceOf('Matryoshka\Module\Controller\Plugin\Object', $object);
     }
 
     /**

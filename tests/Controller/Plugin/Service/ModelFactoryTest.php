@@ -7,19 +7,17 @@
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
-namespace MatryoshkaTest\Module\Controller\Plugin\Service;
+namespace MatryoshkaModuleTest\Module\Controller\Plugin\Service;
 
 use Matryoshka\Model\ModelManager;
-use Matryoshka\Model\Object\ObjectManager;
 use Matryoshka\Module\Controller\Plugin\Service\ModelFactory;
-use Matryoshka\Module\Controller\Plugin\Service\ObjectFactory;
 use Zend\Mvc\Controller\PluginManager;
 use Zend\ServiceManager\ServiceManager;
 
 /**
- * Class ObjectFactoryTest
+ * Class ModelFactoryTest
  */
-class ObjectFactoryTest extends \PHPUnit_Framework_TestCase
+class ModelFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var ServiceManager
@@ -27,9 +25,9 @@ class ObjectFactoryTest extends \PHPUnit_Framework_TestCase
     protected $sm;
 
     /**
-     * @var ObjectManager
+     * @var ModelManager
      */
-    protected $om;
+    protected $mm;
 
     /**
      * @var PluginManager
@@ -37,24 +35,24 @@ class ObjectFactoryTest extends \PHPUnit_Framework_TestCase
     protected $pm;
 
     /**
-     * @var ObjectFactory
+     * @var ModelFactory
      */
     protected $factory;
 
     public function setUp()
     {
         $this->sm = new ServiceManager();
-        $this->om = new ObjectManager();
+        $this->mm = new ModelManager();
         $this->pm = new PluginManager();
-        $this->factory = new ObjectFactory();
+        $this->factory = new ModelFactory();
     }
 
     public function testCreateService()
     {
-        $this->sm->setService('Matryoshka\Model\Object\ObjectManager', $this->om);
+        $this->sm->setService('Matryoshka\Model\ModelManager', $this->mm);
         $this->pm->setServiceLocator($this->sm);
-        $object = $this->factory->createService($this->pm);
-        $this->assertInstanceOf('Matryoshka\Module\Controller\Plugin\Object', $object);
+        $model = $this->factory->createService($this->pm);
+        $this->assertInstanceOf('Matryoshka\Module\Controller\Plugin\Model', $model);
     }
 
     /**

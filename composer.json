@@ -35,9 +35,9 @@
         "satooshi/php-coveralls": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Matryoshka": "src/",
-            "MatryoshkaTest": "tests/"
+        "psr-4": {
+        	"Matryoshka\\Module\\": "src/",
+        	"MatryoshkaModuleTest\\": "tests/"
         },
         "classmap": [
             "./Module.php"
