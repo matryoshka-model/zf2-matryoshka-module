@@ -4,6 +4,8 @@ return [
         'factories'  => [
             'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\Service\ModelManagerFactory',
             'Matryoshka\Model\Object\ObjectManager' => 'Matryoshka\Model\Object\Service\ObjectManagerFactory',
+            'Matryoshka\Model\ResultSet\PrototypeStrategy\ServiceLocatorStrategy'
+                => 'Matryoshka\Model\ResultSet\PrototypeStrategy\Service\ServiceLocatorStrategyFactory',
         ],
         'invokables' => [
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
