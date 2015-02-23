@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": "0.6.*@dev",
+        "matryoshka-model/matryoshka": "~0.6.0",
         "zendframework/zend-mvc": "2.*",
         "zendframework/zend-modulemanager": "2.*"
     },
@@ -50,12 +50,13 @@
         "back-end",
         "db",
         "database",
-        "zf2"
+        "zf2",
+        "module"
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "0.5.x-dev",
-            "dev-develop": "0.6.x-dev"
+            "dev-master": "0.6.x-dev",
+            "dev-develop": "0.7.x-dev"
         }
     },
     "suggest": {
