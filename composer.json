@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "matryoshka-model/matryoshka": "~0.6.0",
+        "matryoshka-model/matryoshka": "0.7.*@dev",
         "zendframework/zend-mvc": "2.*",
         "zendframework/zend-modulemanager": "2.*"
     },
