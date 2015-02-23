@@ -7,7 +7,7 @@
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
-namespace MatryoshkaTest\Module\Controller\Plugin;
+namespace MatryoshkaModuleTest\Module\Controller\Plugin;
 
 use Matryoshka\Model\ModelManager;
 use Matryoshka\Module\Controller\Plugin\Model;
