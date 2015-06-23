@@ -61,4 +61,4 @@ public function fooAction()
 
 ---
 
-[![Analytics](https://ga-beacon.appspot.com/UA-49655829-1/matryoshka-model/zf2-matryoshka-module)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-2/zf2-matryoshka-module)](https://github.com/igrigorik/ga-beacon)
