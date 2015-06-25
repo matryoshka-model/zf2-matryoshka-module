@@ -14,6 +14,7 @@ use Matryoshka\Module\Controller\Plugin\Model;
 use Matryoshka\Module\Controller\Plugin\Object;
 use MatryoshkaModuleTest\Model\TestAsset\ConcreteAbstractModel;
 use Zend\ServiceManager\ServiceManager;
+use Matryoshka\Model\Object\ObjectManager;
 
 /**
  * Class ObjectTest
@@ -28,7 +29,7 @@ class ObjectTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $sm = new ServiceManager();
+        $sm = new ObjectManager();
         $sm->setService('test', new \stdClass());
         $this->object = new Object($sm);
     }

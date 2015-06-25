@@ -10,7 +10,7 @@
 namespace Matryoshka\Module\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
-use Matryoshka\Model\Model as MatryoshkaModel;
+use Matryoshka\Model\ModelInterface;
 use Matryoshka\Model\ModelManager;
 
 /**
@@ -19,13 +19,13 @@ use Matryoshka\Model\ModelManager;
 class Model extends AbstractPlugin
 {
     /**
-     * Models
      * @var ModelManager
      */
     protected $models;
 
     /**
      * Ctor
+     *
      * @param ModelManager $models
      */
     public function __construct(ModelManager $models)
@@ -35,6 +35,7 @@ class Model extends AbstractPlugin
 
     /**
      * Get Model Manager
+     *
      * @return ModelManager
      */
     public function getModelManager()
@@ -43,17 +44,20 @@ class Model extends AbstractPlugin
     }
 
     /**
-     * Get
+     * Get a model by name
+     *
      * @param string $name
-     * @return MatryoshkaModel
+     * @param array $options
+     * @return ModelInterface
      */
-    public function get($name)
+    public function get($name, $options = [])
     {
-        return $this->getModelManager()->get($name);
+        return $this->getModelManager()->get($name, $options);
     }
 
     /**
      * Invoke
+     *
      * @return $this
      */
     public function __invoke()

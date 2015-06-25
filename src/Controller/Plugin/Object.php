@@ -9,9 +9,8 @@
 
 namespace Matryoshka\Module\Controller\Plugin;
 
-use Matryoshka\Model\ModelManager;
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Matryoshka\Model\Object\ObjectManager;
 
 /**
  * Class Object
@@ -19,22 +18,22 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 class Object extends AbstractPlugin
 {
     /**
-     * Models
-     * @var ServiceLocatorInterface
+     * @var ObjectManager
      */
     protected $objectManager;
 
     /**
-     * @param ServiceLocatorInterface $objectManager
+     * @param ObjectManager $objectManager
      */
-    public function __construct(ServiceLocatorInterface $objectManager)
+    public function __construct(ObjectManager $objectManager)
     {
         $this->objectManager = $objectManager;
     }
 
     /**
-     * Get Model Manager
-     * @return ModelManager
+     * Get Object Manager
+     *
+     * @return ObjectManager
      */
     public function getObjectManager()
     {
@@ -42,18 +41,21 @@ class Object extends AbstractPlugin
     }
 
     /**
-     * Get
+     * Get an object instance by name
+     *
      * @param $name
+     * @param array $options
      * @return object
      */
-    public function get($name)
+    public function get($name, $options = [])
     {
-        return $this->getObjectManager()->get($name);
+        return $this->getObjectManager()->get($name, $options = []);
     }
 
     /**
      * Invoke
-     * @return self
+     *
+     * @return $this
      */
     public function __invoke()
     {
