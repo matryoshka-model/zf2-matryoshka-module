@@ -3,18 +3,14 @@
  * ZF2 matryoshka module
  *
  * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
- * @copyright   Copyright (c) 2014, Ripa Club
+ * @copyright   Copyright (c) 2015, Ripa Club
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
 namespace MatryoshkaModuleTest\Module\Controller\Plugin;
 
-use Matryoshka\Model\ModelManager;
-use Matryoshka\Module\Controller\Plugin\Model;
-use Matryoshka\Module\Controller\Plugin\Object;
-use MatryoshkaModuleTest\Model\TestAsset\ConcreteAbstractModel;
-use Zend\ServiceManager\ServiceManager;
 use Matryoshka\Model\Object\ObjectManager;
+use Matryoshka\Module\Controller\Plugin\Object;
 
 /**
  * Class ObjectTest

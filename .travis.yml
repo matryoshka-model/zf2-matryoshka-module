@@ -1,30 +1,35 @@
+sudo: false
 language: php
-
-php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - hhvm
-
-branches:
-  only:
-    - master
-    - develop
-
-install:
-  - composer self-update
-  - composer install --dev --prefer-source
-
-before_script:
-  - mkdir -p build/coverage
-
-script:
- - vendor/bin/phpunit
-
-after_script:
- - php vendor/bin/coveralls
-
 matrix:
   fast_finish: true
+  include:
+  - php: 5.5
+  - php: 5.6
+  - php: 7
+  - php: hhvm
   allow_failures:
-    - php: hhvm
+  - php: 7
+  - php: hhvm
+before_script:
+- composer self-update
+- composer config --global github-oauth.github.com ${GH_TOKEN}
+- composer install
+install:
+- composer self-update
+- composer install --dev --prefer-source
+script:
+- vendor/bin/phpunit
+after_script:
+- php vendor/bin/coveralls
+notifications:
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/70b21e421c7b6b4d20a8
+    on_success: change
+  email: false
+cache:
+  directories:
+  - "$HOME/.composer/cache"
+env:
+  global:
+    secure: cLwvoccx88uWiGybvE++hPCwvS67El94fpWCAv5aKDHgrBxXKsOICwPr4vZ0WRZTxkwy/KyM3BS2yixMqSzyPoh+AtVlJp2a6yKTs8jj9AHtSKCKHkqPxKecZ/Q+U/5RI6rucgc2rkD9kDEr6+etwTH8n0zLk9WpOaIbhQxjzeg=

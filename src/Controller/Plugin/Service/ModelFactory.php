@@ -3,16 +3,16 @@
  * ZF2 matryoshka module
  *
  * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
- * @copyright   Copyright (c) 2014, Ripa Club
+ * @copyright   Copyright (c) 2015, Ripa Club
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
 namespace Matryoshka\Module\Controller\Plugin\Service;
 
+use Matryoshka\Module\Controller\Plugin\Model;
+use Zend\ServiceManager\Exception\ServiceNotCreatedException;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\ServiceManager\Exception\ServiceNotCreatedException;
-use Matryoshka\Module\Controller\Plugin\Model;
 
 /**
  * Class ModelFactory
@@ -20,8 +20,9 @@ use Matryoshka\Module\Controller\Plugin\Model;
 class ModelFactory implements FactoryInterface
 {
     /**
-     * {@inheritdoc}
+     * Create service
      *
+     * @param ServiceLocatorInterface $plugins
      * @return Model
      * @throws ServiceNotCreatedException if ModelManager service is not found in application service locator
      */
@@ -43,6 +44,7 @@ class ModelFactory implements FactoryInterface
             ));
         }
 
+        /** @var $models \Matryoshka\Model\ModelManager */
         $models = $services->get('Matryoshka\Model\ModelManager');
         return new Model($models);
     }
