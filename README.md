@@ -1,15 +1,9 @@
 ZF2 module for matryoshka 
 =========================
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/matryoshka-model/zf2-matryoshka-module.svg?style=flat-square)](https://packagist.org/packages/matryoshka-model/zf2-matryoshka-module)
+[![Latest Stable Version](https://img.shields.io/packagist/v/matryoshka-model/zf2-matryoshka-module.svg?style=flat-square)](https://packagist.org/packages/matryoshka-model/zf2-matryoshka-module) [![Build Status](https://img.shields.io/travis/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://travis-ci.org/matryoshka-model/zf2-matryoshka-module) [![Coverage Status](https://img.shields.io/coveralls/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://coveralls.io/repos/matryoshka-model/zf2-matryoshka-module/badge.png?branch=master)
 
-| Master  | Develop |
-|:-------------:|:-------------:|
-| [![Build Status](https://img.shields.io/travis/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://travis-ci.org/matryoshka-model/zf2-matryoshka-module) | [![Build Status](https://img.shields.io/travis/matryoshka-model/zf2-matryoshka-module/develop.svg?style=flat-square)](https://travis-ci.org/matryoshka-model/zf2-matryoshka-module) |
-| [![Coverage Status](https://img.shields.io/coveralls/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://coveralls.io/repos/matryoshka-model/zf2-matryoshka-module/badge.png?branch=master) | [![Coverage Status](https://img.shields.io/coveralls/matryoshka-model/zf2-matryoshka-module/develop.svg?style=flat-square)](https://coveralls.io/repos/matryoshka-model/zf2-matryoshka-module/badge.png?branch=develop) |
-
-
-ZF2 integration module for [Matryoshka library](https://github.com/matryoshka-model/matryoshka).
+> ZF2 integration module for [Matryoshka library](https://github.com/matryoshka-model/matryoshka).
 
 This repository contains a ZF2 module that registers **default services** and provides **a set of useful controller plugins**.
 
@@ -61,4 +55,4 @@ public function fooAction()
 
 ---
 
-[![Analytics](https://ga-beacon.appspot.com/UA-49655829-1/matryoshka-model/zf2-matryoshka-module)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-2/zf2-matryoshka-module?flat)](https://github.com/igrigorik/ga-beacon)
