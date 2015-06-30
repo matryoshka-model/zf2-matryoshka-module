@@ -3,15 +3,13 @@
  * ZF2 matryoshka module
  *
  * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
- * @copyright   Copyright (c) 2014, Ripa Club
+ * @copyright   Copyright (c) 2015, Ripa Club
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
 namespace MatryoshkaModuleTest\Module\Controller\Plugin\Service;
 
-use Matryoshka\Model\ModelManager;
 use Matryoshka\Model\Object\ObjectManager;
-use Matryoshka\Module\Controller\Plugin\Service\ModelFactory;
 use Matryoshka\Module\Controller\Plugin\Service\ObjectFactory;
 use Zend\Mvc\Controller\PluginManager;
 use Zend\ServiceManager\ServiceManager;

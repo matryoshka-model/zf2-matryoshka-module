@@ -3,15 +3,14 @@
  * ZF2 matryoshka module
  *
  * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
- * @copyright   Copyright (c) 2014, Ripa Club
+ * @copyright   Copyright (c) 2015, Ripa Club
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
 namespace Matryoshka\Module\Controller\Plugin;
 
-use Matryoshka\Model\ModelManager;
+use Matryoshka\Model\Object\ObjectManager;
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
-use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
  * Class Object
@@ -19,22 +18,22 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 class Object extends AbstractPlugin
 {
     /**
-     * Models
-     * @var ServiceLocatorInterface
+     * @var ObjectManager
      */
     protected $objectManager;
 
     /**
-     * @param ServiceLocatorInterface $objectManager
+     * @param ObjectManager $objectManager
      */
-    public function __construct(ServiceLocatorInterface $objectManager)
+    public function __construct(ObjectManager $objectManager)
     {
         $this->objectManager = $objectManager;
     }
 
     /**
-     * Get Model Manager
-     * @return ModelManager
+     * Get Object Manager
+     *
+     * @return ObjectManager
      */
     public function getObjectManager()
     {
@@ -42,18 +41,21 @@ class Object extends AbstractPlugin
     }
 
     /**
-     * Get
+     * Get an object instance by name
+     *
      * @param $name
+     * @param array $options
      * @return object
      */
-    public function get($name)
+    public function get($name, $options = [])
     {
-        return $this->getObjectManager()->get($name);
+        return $this->getObjectManager()->get($name, $options = []);
     }
 
     /**
      * Invoke
-     * @return self
+     *
+     * @return $this
      */
     public function __invoke()
     {

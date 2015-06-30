@@ -1,11 +1,11 @@
 <?php
 return [
     'service_manager' => [
-        'factories'  => [
+        'factories' => [
             'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\Service\ModelManagerFactory',
             'Matryoshka\Model\Object\ObjectManager' => 'Matryoshka\Model\Object\Service\ObjectManagerFactory',
-            'Matryoshka\Model\ResultSet\PrototypeStrategy\ServiceLocatorStrategy'
-                => 'Matryoshka\Model\ResultSet\PrototypeStrategy\Service\ServiceLocatorStrategyFactory',
+            'Matryoshka\Model\Object\PrototypeStrategy\ServiceLocatorStrategy'
+            => 'Matryoshka\Model\Object\PrototypeStrategy\Service\ServiceLocatorStrategyFactory',
         ],
         'invokables' => [
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
@@ -20,8 +20,8 @@ return [
     ],
     'controller_plugins' => [
         'factories' => [
-            'model'     => 'Matryoshka\Module\Controller\Plugin\Service\ModelFactory',
-            'object'    => 'Matryoshka\Module\Controller\Plugin\Service\ObjectFactory',
+            'model' => 'Matryoshka\Module\Controller\Plugin\Service\ModelFactory',
+            'object' => 'Matryoshka\Module\Controller\Plugin\Service\ObjectFactory',
         ],
     ],
 ];

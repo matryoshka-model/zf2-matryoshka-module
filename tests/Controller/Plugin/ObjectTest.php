@@ -3,17 +3,14 @@
  * ZF2 matryoshka module
  *
  * @link        https://github.com/matryoshka-model/zf2-matryoshka-module
- * @copyright   Copyright (c) 2014, Ripa Club
+ * @copyright   Copyright (c) 2015, Ripa Club
  * @license     http://opensource.org/licenses/BSD-2-Clause Simplified BSD License
  */
 
 namespace MatryoshkaModuleTest\Module\Controller\Plugin;
 
-use Matryoshka\Model\ModelManager;
-use Matryoshka\Module\Controller\Plugin\Model;
+use Matryoshka\Model\Object\ObjectManager;
 use Matryoshka\Module\Controller\Plugin\Object;
-use MatryoshkaModuleTest\Model\TestAsset\ConcreteAbstractModel;
-use Zend\ServiceManager\ServiceManager;
 
 /**
  * Class ObjectTest
@@ -28,7 +25,7 @@ class ObjectTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $sm = new ServiceManager();
+        $sm = new ObjectManager();
         $sm->setService('test', new \stdClass());
         $this->object = new Object($sm);
     }
