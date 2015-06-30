@@ -1,6 +1,6 @@
 {
   "name": "matryoshka-model/zf2-matryoshka-module",
-  "description": "ZF2 module for matryoshka library",
+  "description": "ZF2 integration module for Matryoshka",
   "license": "BSD-2-Clause",
   "authors": [
     {
@@ -26,7 +26,7 @@
   ],
   "require": {
     "php": ">=5.5",
-    "matryoshka-model/matryoshka": "0.7.*@dev",
+    "matryoshka-model/matryoshka": "~0.7.0",
     "zendframework/zend-mvc": "2.*",
     "zendframework/zend-modulemanager": "2.*"
   },
@@ -48,6 +48,7 @@
     "mvc",
     "matryoshka",
     "back-end",
+    "backend",
     "db",
     "database",
     "zf2",
@@ -55,8 +56,8 @@
   ],
   "extra": {
     "branch-alias": {
-      "dev-master": "0.6.x-dev",
-      "dev-develop": "0.7.x-dev"
+      "dev-master": "0.7.x-dev",
+      "dev-develop": "0.8.x-dev"
     }
   },
   "suggest": {
