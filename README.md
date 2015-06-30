@@ -1,9 +1,11 @@
-ZF2 module for matryoshka 
+<p><img align="right" src="https://github.com/matryoshka-model/matryoshka/blob/master/docs/assets/images/matryoshka_logo_hi_res_512.png" width="64px" height="64px"/></p>
+<p></p>
+ZF2 module for Matryoshka
 =========================
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/matryoshka-model/zf2-matryoshka-module.svg?style=flat-square)](https://packagist.org/packages/matryoshka-model/zf2-matryoshka-module) [![Build Status](https://img.shields.io/travis/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://travis-ci.org/matryoshka-model/zf2-matryoshka-module) [![Coverage Status](https://img.shields.io/coveralls/matryoshka-model/zf2-matryoshka-module/master.svg?style=flat-square)](https://coveralls.io/repos/matryoshka-model/zf2-matryoshka-module/badge.png?branch=master) [![Matryoshka Model's Slack](http://matryoshka-slackin.herokuapp.com/badge.svg?style=flat-square)](http://matryoshka-slackin.herokuapp.com)
 
-> ZF2 integration module for [Matryoshka library](https://github.com/matryoshka-model/matryoshka).
+> ZF2 integration module for [Matryoshka](https://github.com/matryoshka-model/matryoshka).
 
 This repository contains a ZF2 module that registers **default services** and provides **a set of useful controller plugins**.
 
@@ -29,14 +31,14 @@ key:
 
 
 ```php
-return array(
+return [
     /* ... */
-    'modules' => array(
+    'modules' => [
         /* ... */
         'Matryoshka',
-    ),
+    ],
     /* ... */
-);
+];
 ```
 
 How-to
