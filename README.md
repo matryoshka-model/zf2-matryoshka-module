@@ -11,7 +11,7 @@ This repository contains a ZF2 module that registers **default services** and pr
 
 #### Community
 
-For questions and support please visit the [slack channel](http://matryoshka-slackin.herokuapp.com).
+For questions and support please visit the [slack channel](http://matryoshka.slack.com) (get an invite [here](http://matryoshka-slackin.herokuapp.com)).
 
 Installation
 ---
