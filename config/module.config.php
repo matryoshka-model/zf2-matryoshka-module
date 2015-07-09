@@ -4,8 +4,10 @@ return [
         'factories' => [
             'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\Service\ModelManagerFactory',
             'Matryoshka\Model\Object\ObjectManager' => 'Matryoshka\Model\Object\Service\ObjectManagerFactory',
+            'Matryoshka\Model\Listener\ListenerManager'
+                => 'Matryoshka\Model\Listener\Service\ListenerManagerFactory',
             'Matryoshka\Model\Object\PrototypeStrategy\ServiceLocatorStrategy'
-            => 'Matryoshka\Model\Object\PrototypeStrategy\Service\ServiceLocatorStrategyFactory',
+                => 'Matryoshka\Model\Object\PrototypeStrategy\Service\ServiceLocatorStrategyFactory',
         ],
         'invokables' => [
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
@@ -14,6 +16,7 @@ return [
         'shared' => [
             'Matryoshka\Model\ModelManager' => true,
             'Matryoshka\Model\Object\ObjectManager' => true,
+            'Matryoshka\Model\Listener\ListenerManager' => true,
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => false,
             'Matryoshka\Model\ResultSet\HydratingResultSet' => false,
         ],
