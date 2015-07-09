@@ -12,8 +12,11 @@ namespace MatryoshkaModuleTest\Module;
 use Matryoshka\Module;
 use Zend\ServiceManager\Config;
 use Zend\ServiceManager\ServiceManager;
+
 /**
- * Class ModelTest
+ * Class ServiceManagerConfigurationTest
+ * 
+ * @group integration
  */
 class ServiceManagerConfigurationTest extends \PHPUnit_Framework_TestCase
 {
