@@ -22,7 +22,7 @@ Add the following to your `composer.json` file:
 
 ```json
 "require": {
-    "matryoshka-model/zf2-matryoshka-module": "~0.7.0"
+    "matryoshka-model/zf2-matryoshka-module": "~0.8.0"
 }
 ```
 
